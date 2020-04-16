@@ -1,0 +1,52 @@
+<div ng-app="myApp" ng-controller="HomeCtrl">
+
+	<h2>Submit your search:</h1>
+		<form >
+			<div>App Name:
+				<input type="text" ng-model="Appname" placeholder="Enter App name" />
+     </div>
+				<div>App manager:
+					<input type="text" ng-model="AppManager" placeholder="Enter App manager" />
+					<label><input type="radio" ng-model="user.preference" value="AND" />AND</label>
+					<label><input type="radio" ng-model="user.preference" value="OR" />OR</label><br />
+    </div>
+
+					<div>Org Name:
+						<input type="text" ng-model="Orgname" placeholder="Enter Country name" />
+						<label><input type="radio" ng-model="user.preference2" value="AND" />AND</label>
+						<label><input type="radio" ng-model="user.preference2" value="OR" />OR</label><br />
+    </div>
+
+						<div>Country Name:
+							<input type="text" ng-model="Countryname" placeholder="Enter Country name" />
+							<label><input type="radio" ng-model="user.preference3" value="AND" />AND</label>
+							<label><input type="radio" ng-model="user.preference3" value="OR" />OR</label><br />
+    </div>
+
+
+							<br>
+
+      </br>
+
+							<div>
+							<button ng-click="serchStr()">Submit</button>
+    </div>
+
+								<br>
+
+
+    </br>
+
+								<div>Search str:
+									<input type="text" ng-model="querystr" placeholder="your query will be displayed here" size="50" value=""  readonly />
+    </div>
+
+
+
+		</form>
+
+</div>
+
+<script src ="HomeCtrl.js"></script>
+
+
